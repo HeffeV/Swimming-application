@@ -1,0 +1,240 @@
+\hypertarget{class_c_i___cache__memcached}{}\section{C\+I\+\_\+\+Cache\+\_\+memcached Class Referentie}
+\label{class_c_i___cache__memcached}\index{CI\_Cache\_memcached@{CI\_Cache\_memcached}}
+Klasse diagram voor C\+I\+\_\+\+Cache\+\_\+memcached\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_i___cache__memcached}
+\end{center}
+\end{figure}
+\subsection*{Public Members}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___cache__memcached_a095c5d389db211932136b53f25f39685}{\+\_\+\+\_\+construct}} ()
+\item 
+\mbox{\hyperlink{class_c_i___cache__memcached_a50e3bfb586b2f42932a6a93f3fbb0828}{get}} (\$id)
+\item 
+\mbox{\hyperlink{class_c_i___cache__memcached_a472645db04a8ce4b040b789a3062a7d2}{save}} (\$id, \$data, \$ttl=60, \$raw=F\+A\+L\+SE)
+\item 
+\mbox{\hyperlink{class_c_i___cache__memcached_a2f8258add505482d7f00ea26493a5723}{delete}} (\$id)
+\item 
+\mbox{\hyperlink{class_c_i___cache__memcached_a2f07a4e09b57f4460d49852497d1808f}{increment}} (\$id, \$offset=1)
+\item 
+\mbox{\hyperlink{class_c_i___cache__memcached_a4eb1c2772c8efc48c411ea060dd040b7}{decrement}} (\$id, \$offset=1)
+\item 
+\mbox{\hyperlink{class_c_i___cache__memcached_adb40b812890a8bc058bf6b7a0e1a54d9}{clean}} ()
+\item 
+\mbox{\hyperlink{class_c_i___cache__memcached_acb4742926a6fa901e4f0917e1a35ef4c}{cache\+\_\+info}} ()
+\item 
+\mbox{\hyperlink{class_c_i___cache__memcached_a59635cf18e997c5141bffa05ff7622e0}{get\+\_\+metadata}} (\$id)
+\item 
+\mbox{\hyperlink{class_c_i___cache__memcached_a98c68fd153468bc148c4ed8c716859fc}{is\+\_\+supported}} ()
+\item 
+\mbox{\hyperlink{class_c_i___cache__memcached_a421831a265621325e1fdd19aace0c758}{\+\_\+\+\_\+destruct}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributen}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_i___cache__memcached_a9ce5188201bbc41ed4374947a35dadcc}\label{class_c_i___cache__memcached_a9ce5188201bbc41ed4374947a35dadcc}} 
+{\bfseries \$\+\_\+memcached}
+\item 
+{\bfseries \$\+\_\+config}
+\end{DoxyCompactItemize}
+\subsection*{Additionele Overge\"{e}rfde Members}
+
+
+\subsection{Constructor \& Destructor Documentatie}
+\mbox{\Hypertarget{class_c_i___cache__memcached_a095c5d389db211932136b53f25f39685}\label{class_c_i___cache__memcached_a095c5d389db211932136b53f25f39685}} 
+\index{CI\_Cache\_memcached@{CI\_Cache\_memcached}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!CI\_Cache\_memcached@{CI\_Cache\_memcached}}
+\subsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Class constructor
+
+Setup Memcache(d)
+
+\begin{DoxyReturn}{Retourneert}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___cache__memcached_a421831a265621325e1fdd19aace0c758}\label{class_c_i___cache__memcached_a421831a265621325e1fdd19aace0c758}} 
+\index{CI\_Cache\_memcached@{CI\_Cache\_memcached}!\_\_destruct@{\_\_destruct}}
+\index{\_\_destruct@{\_\_destruct}!CI\_Cache\_memcached@{CI\_Cache\_memcached}}
+\subsubsection{\texorpdfstring{\_\_destruct()}{\_\_destruct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+destruct (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Class destructor
+
+Closes the connection to Memcache(d) if present.
+
+\begin{DoxyReturn}{Retourneert}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Documentatie van functie members}
+\mbox{\Hypertarget{class_c_i___cache__memcached_acb4742926a6fa901e4f0917e1a35ef4c}\label{class_c_i___cache__memcached_acb4742926a6fa901e4f0917e1a35ef4c}} 
+\index{CI\_Cache\_memcached@{CI\_Cache\_memcached}!cache\_info@{cache\_info}}
+\index{cache\_info@{cache\_info}!CI\_Cache\_memcached@{CI\_Cache\_memcached}}
+\subsubsection{\texorpdfstring{cache\_info()}{cache\_info()}}
+{\footnotesize\ttfamily cache\+\_\+info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Cache Info
+
+\begin{DoxyReturn}{Retourneert}
+mixed array on success, false on failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___cache__memcached_adb40b812890a8bc058bf6b7a0e1a54d9}\label{class_c_i___cache__memcached_adb40b812890a8bc058bf6b7a0e1a54d9}} 
+\index{CI\_Cache\_memcached@{CI\_Cache\_memcached}!clean@{clean}}
+\index{clean@{clean}!CI\_Cache\_memcached@{CI\_Cache\_memcached}}
+\subsubsection{\texorpdfstring{clean()}{clean()}}
+{\footnotesize\ttfamily clean (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Clean the Cache
+
+\begin{DoxyReturn}{Retourneert}
+bool false on failure/true on success 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___cache__memcached_a4eb1c2772c8efc48c411ea060dd040b7}\label{class_c_i___cache__memcached_a4eb1c2772c8efc48c411ea060dd040b7}} 
+\index{CI\_Cache\_memcached@{CI\_Cache\_memcached}!decrement@{decrement}}
+\index{decrement@{decrement}!CI\_Cache\_memcached@{CI\_Cache\_memcached}}
+\subsubsection{\texorpdfstring{decrement()}{decrement()}}
+{\footnotesize\ttfamily decrement (\begin{DoxyParamCaption}\item[{}]{\$id,  }\item[{}]{\$offset = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+Decrement a raw value
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$id} & Cache ID \\
+\hline
+int & {\em \$offset} & Step/value to reduce by \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retourneert}
+mixed New value on success or F\+A\+L\+SE on failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___cache__memcached_a2f8258add505482d7f00ea26493a5723}\label{class_c_i___cache__memcached_a2f8258add505482d7f00ea26493a5723}} 
+\index{CI\_Cache\_memcached@{CI\_Cache\_memcached}!delete@{delete}}
+\index{delete@{delete}!CI\_Cache\_memcached@{CI\_Cache\_memcached}}
+\subsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily delete (\begin{DoxyParamCaption}\item[{}]{\$id }\end{DoxyParamCaption})}
+
+Delete from Cache
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$id} & key to be deleted. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retourneert}
+bool true on success, false on failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___cache__memcached_a50e3bfb586b2f42932a6a93f3fbb0828}\label{class_c_i___cache__memcached_a50e3bfb586b2f42932a6a93f3fbb0828}} 
+\index{CI\_Cache\_memcached@{CI\_Cache\_memcached}!get@{get}}
+\index{get@{get}!CI\_Cache\_memcached@{CI\_Cache\_memcached}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily get (\begin{DoxyParamCaption}\item[{}]{\$id }\end{DoxyParamCaption})}
+
+Fetch from cache
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$id} & Cache ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retourneert}
+mixed Data on success, F\+A\+L\+SE on failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___cache__memcached_a59635cf18e997c5141bffa05ff7622e0}\label{class_c_i___cache__memcached_a59635cf18e997c5141bffa05ff7622e0}} 
+\index{CI\_Cache\_memcached@{CI\_Cache\_memcached}!get\_metadata@{get\_metadata}}
+\index{get\_metadata@{get\_metadata}!CI\_Cache\_memcached@{CI\_Cache\_memcached}}
+\subsubsection{\texorpdfstring{get\_metadata()}{get\_metadata()}}
+{\footnotesize\ttfamily get\+\_\+metadata (\begin{DoxyParamCaption}\item[{}]{\$id }\end{DoxyParamCaption})}
+
+Get Cache Metadata
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$id} & key to get cache metadata on \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retourneert}
+mixed F\+A\+L\+SE on failure, array on success. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___cache__memcached_a2f07a4e09b57f4460d49852497d1808f}\label{class_c_i___cache__memcached_a2f07a4e09b57f4460d49852497d1808f}} 
+\index{CI\_Cache\_memcached@{CI\_Cache\_memcached}!increment@{increment}}
+\index{increment@{increment}!CI\_Cache\_memcached@{CI\_Cache\_memcached}}
+\subsubsection{\texorpdfstring{increment()}{increment()}}
+{\footnotesize\ttfamily increment (\begin{DoxyParamCaption}\item[{}]{\$id,  }\item[{}]{\$offset = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+Increment a raw value
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$id} & Cache ID \\
+\hline
+int & {\em \$offset} & Step/value to add \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retourneert}
+mixed New value on success or F\+A\+L\+SE on failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___cache__memcached_a98c68fd153468bc148c4ed8c716859fc}\label{class_c_i___cache__memcached_a98c68fd153468bc148c4ed8c716859fc}} 
+\index{CI\_Cache\_memcached@{CI\_Cache\_memcached}!is\_supported@{is\_supported}}
+\index{is\_supported@{is\_supported}!CI\_Cache\_memcached@{CI\_Cache\_memcached}}
+\subsubsection{\texorpdfstring{is\_supported()}{is\_supported()}}
+{\footnotesize\ttfamily is\+\_\+supported (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Is supported
+
+Returns F\+A\+L\+SE if memcached is not supported on the system. If it is, we setup the memcached object \& return T\+R\+UE
+
+\begin{DoxyReturn}{Retourneert}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___cache__memcached_a472645db04a8ce4b040b789a3062a7d2}\label{class_c_i___cache__memcached_a472645db04a8ce4b040b789a3062a7d2}} 
+\index{CI\_Cache\_memcached@{CI\_Cache\_memcached}!save@{save}}
+\index{save@{save}!CI\_Cache\_memcached@{CI\_Cache\_memcached}}
+\subsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily save (\begin{DoxyParamCaption}\item[{}]{\$id,  }\item[{}]{\$data,  }\item[{}]{\$ttl = {\ttfamily 60},  }\item[{}]{\$raw = {\ttfamily FALSE} }\end{DoxyParamCaption})}
+
+Save
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$id} & Cache ID \\
+\hline
+mixed & {\em \$data} & Data being cached \\
+\hline
+int & {\em \$ttl} & Time to live \\
+\hline
+bool & {\em \$raw} & Whether to store the raw value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retourneert}
+bool T\+R\+UE on success, F\+A\+L\+SE on failure 
+\end{DoxyReturn}
+
+
+\subsection{Documentatie van data members}
+\mbox{\Hypertarget{class_c_i___cache__memcached_a4d4ad4af1600438042f93a4492f8dbbe}\label{class_c_i___cache__memcached_a4d4ad4af1600438042f93a4492f8dbbe}} 
+\index{CI\_Cache\_memcached@{CI\_Cache\_memcached}!\$\_config@{\$\_config}}
+\index{\$\_config@{\$\_config}!CI\_Cache\_memcached@{CI\_Cache\_memcached}}
+\subsubsection{\texorpdfstring{\$\_config}{$\_config}}
+{\footnotesize\ttfamily \$\+\_\+config\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initi\"{e}le waarde\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= array(}
+\DoxyCodeLine{        \textcolor{stringliteral}{'default'} => array(}
+\DoxyCodeLine{            \textcolor{stringliteral}{'host'}      => \textcolor{stringliteral}{'127.0.0.1'},}
+\DoxyCodeLine{            \textcolor{stringliteral}{'port'}      => 11211,}
+\DoxyCodeLine{            \textcolor{stringliteral}{'weight'}    => 1}
+\DoxyCodeLine{        )}
+\DoxyCodeLine{    )}
+
+\end{DoxyCode}
+
+
+De documentatie voor deze klasse is gegenereerd op grond van het volgende bestand\+:\begin{DoxyCompactItemize}
+\item 
+system/libraries/\+Cache/drivers/Cache\+\_\+memcached.\+php\end{DoxyCompactItemize}

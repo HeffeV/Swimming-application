@@ -1,0 +1,145 @@
+\hypertarget{class_c_i___session__driver}{}\section{C\+I\+\_\+\+Session\+\_\+driver Class Referentie}
+\label{class_c_i___session__driver}\index{CI\_Session\_driver@{CI\_Session\_driver}}
+Klasse diagram voor C\+I\+\_\+\+Session\+\_\+driver\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.121212cm]{class_c_i___session__driver}
+\end{center}
+\end{figure}
+\subsection*{Public Members}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___session__driver_ac1669c73d53d6f16cf5459a1e84d39c8}{\+\_\+\+\_\+construct}} (\&\$params)
+\item 
+\mbox{\hyperlink{class_c_i___session__driver_ae2d4c0f64a46de5c8f8db759478f3a5f}{php5\+\_\+validate\+\_\+id}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributen}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_i___session__driver_af597a603db9347ef534b97834ed272a8}\label{class_c_i___session__driver_af597a603db9347ef534b97834ed272a8}} 
+{\bfseries \$\+\_\+failure}
+\end{DoxyCompactItemize}
+\subsection*{Protected Members}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___session__driver_a36771b622e8a8928c1c931ac56c12434}{\+\_\+cookie\+\_\+destroy}} ()
+\item 
+\mbox{\hyperlink{class_c_i___session__driver_a2c49c8e23be3e2aca96a9d20de18ffc2}{\+\_\+get\+\_\+lock}} (\$session\+\_\+id)
+\item 
+\mbox{\hyperlink{class_c_i___session__driver_a0265e356e6cf1eaba229663c1664c37d}{\+\_\+release\+\_\+lock}} ()
+\item 
+\mbox{\hyperlink{class_c_i___session__driver_a1b1bf5bb9cba50e84f985c30f6b64773}{\+\_\+fail}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributen}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_i___session__driver_a4d4ad4af1600438042f93a4492f8dbbe}\label{class_c_i___session__driver_a4d4ad4af1600438042f93a4492f8dbbe}} 
+{\bfseries \$\+\_\+config}
+\item 
+\mbox{\Hypertarget{class_c_i___session__driver_ac926edb2847b6610e253be83270c2cc2}\label{class_c_i___session__driver_ac926edb2847b6610e253be83270c2cc2}} 
+{\bfseries \$\+\_\+fingerprint}
+\item 
+\mbox{\Hypertarget{class_c_i___session__driver_a1cfb8ce1d225fe600a6a034d685b8ff6}\label{class_c_i___session__driver_a1cfb8ce1d225fe600a6a034d685b8ff6}} 
+{\bfseries \$\+\_\+lock} = F\+A\+L\+SE
+\item 
+\mbox{\Hypertarget{class_c_i___session__driver_a92023c94926d17b1f6705c8b1d35a103}\label{class_c_i___session__driver_a92023c94926d17b1f6705c8b1d35a103}} 
+{\bfseries \$\+\_\+session\+\_\+id}
+\item 
+\mbox{\Hypertarget{class_c_i___session__driver_a0f7033d534d3f4ae0f5467368f724e7b}\label{class_c_i___session__driver_a0f7033d534d3f4ae0f5467368f724e7b}} 
+{\bfseries \$\+\_\+success}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentatie}
+\mbox{\Hypertarget{class_c_i___session__driver_ac1669c73d53d6f16cf5459a1e84d39c8}\label{class_c_i___session__driver_ac1669c73d53d6f16cf5459a1e84d39c8}} 
+\index{CI\_Session\_driver@{CI\_Session\_driver}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!CI\_Session\_driver@{CI\_Session\_driver}}
+\subsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\&}]{\$params }\end{DoxyParamCaption})}
+
+Class constructor
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$params} & Configuration parameters \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retourneert}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Documentatie van functie members}
+\mbox{\Hypertarget{class_c_i___session__driver_a36771b622e8a8928c1c931ac56c12434}\label{class_c_i___session__driver_a36771b622e8a8928c1c931ac56c12434}} 
+\index{CI\_Session\_driver@{CI\_Session\_driver}!\_cookie\_destroy@{\_cookie\_destroy}}
+\index{\_cookie\_destroy@{\_cookie\_destroy}!CI\_Session\_driver@{CI\_Session\_driver}}
+\subsubsection{\texorpdfstring{\_cookie\_destroy()}{\_cookie\_destroy()}}
+{\footnotesize\ttfamily \+\_\+cookie\+\_\+destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Cookie destroy
+
+Internal method to force removal of a cookie by the client when session\+\_\+destroy() is called.
+
+\begin{DoxyReturn}{Retourneert}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___session__driver_a1b1bf5bb9cba50e84f985c30f6b64773}\label{class_c_i___session__driver_a1b1bf5bb9cba50e84f985c30f6b64773}} 
+\index{CI\_Session\_driver@{CI\_Session\_driver}!\_fail@{\_fail}}
+\index{\_fail@{\_fail}!CI\_Session\_driver@{CI\_Session\_driver}}
+\subsubsection{\texorpdfstring{\_fail()}{\_fail()}}
+{\footnotesize\ttfamily \+\_\+fail (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Fail
+
+Drivers other than the \textquotesingle{}files\textquotesingle{} one don\textquotesingle{}t (need to) use the session.\+save\+\_\+path I\+NI setting, but that leads to confusing error messages emitted by P\+HP when open() or write() fail, as the message contains session.\+save\+\_\+path ... To work around the problem, the drivers will call this method so that the I\+NI is set just in time for the error message to be properly generated.
+
+\begin{DoxyReturn}{Retourneert}
+mixed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___session__driver_a2c49c8e23be3e2aca96a9d20de18ffc2}\label{class_c_i___session__driver_a2c49c8e23be3e2aca96a9d20de18ffc2}} 
+\index{CI\_Session\_driver@{CI\_Session\_driver}!\_get\_lock@{\_get\_lock}}
+\index{\_get\_lock@{\_get\_lock}!CI\_Session\_driver@{CI\_Session\_driver}}
+\subsubsection{\texorpdfstring{\_get\_lock()}{\_get\_lock()}}
+{\footnotesize\ttfamily \+\_\+get\+\_\+lock (\begin{DoxyParamCaption}\item[{}]{\$session\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get lock
+
+A dummy method allowing drivers with no locking functionality (databases other than Postgre\+S\+QL and My\+S\+QL) to act as if they do acquire a lock.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$session\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retourneert}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___session__driver_a0265e356e6cf1eaba229663c1664c37d}\label{class_c_i___session__driver_a0265e356e6cf1eaba229663c1664c37d}} 
+\index{CI\_Session\_driver@{CI\_Session\_driver}!\_release\_lock@{\_release\_lock}}
+\index{\_release\_lock@{\_release\_lock}!CI\_Session\_driver@{CI\_Session\_driver}}
+\subsubsection{\texorpdfstring{\_release\_lock()}{\_release\_lock()}}
+{\footnotesize\ttfamily \+\_\+release\+\_\+lock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Release lock
+
+\begin{DoxyReturn}{Retourneert}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___session__driver_ae2d4c0f64a46de5c8f8db759478f3a5f}\label{class_c_i___session__driver_ae2d4c0f64a46de5c8f8db759478f3a5f}} 
+\index{CI\_Session\_driver@{CI\_Session\_driver}!php5\_validate\_id@{php5\_validate\_id}}
+\index{php5\_validate\_id@{php5\_validate\_id}!CI\_Session\_driver@{CI\_Session\_driver}}
+\subsubsection{\texorpdfstring{php5\_validate\_id()}{php5\_validate\_id()}}
+{\footnotesize\ttfamily php5\+\_\+validate\+\_\+id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+P\+HP 5.\+x validate ID
+
+Enforces session.\+use\+\_\+strict\+\_\+mode
+
+\begin{DoxyReturn}{Retourneert}
+void 
+\end{DoxyReturn}
+
+
+De documentatie voor deze klasse is gegenereerd op grond van het volgende bestand\+:\begin{DoxyCompactItemize}
+\item 
+system/libraries/\+Session/Session\+\_\+driver.\+php\end{DoxyCompactItemize}

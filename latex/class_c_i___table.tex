@@ -1,0 +1,293 @@
+\hypertarget{class_c_i___table}{}\section{C\+I\+\_\+\+Table Class Referentie}
+\label{class_c_i___table}\index{CI\_Table@{CI\_Table}}
+\subsection*{Public Members}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___table_af7f9493844d2d66e924e3c1df51ce616}{\+\_\+\+\_\+construct}} (\$config=array())
+\item 
+\mbox{\hyperlink{class_c_i___table_ae65d1ab2a626d4ddfda31befc2b347f6}{set\+\_\+template}} (\$template)
+\item 
+\mbox{\hyperlink{class_c_i___table_ac35607094955ce966330d6af51d221ef}{set\+\_\+heading}} (\$args=array())
+\item 
+\mbox{\hyperlink{class_c_i___table_a816eac03a6a38820918890170fd7e0d0}{make\+\_\+columns}} (\$array=array(), \$col\+\_\+limit=0)
+\item 
+\mbox{\hyperlink{class_c_i___table_a20b008428100a2b740c02c4bcaa45cf6}{set\+\_\+empty}} (\$value)
+\item 
+\mbox{\hyperlink{class_c_i___table_aed032b02068e33116d9ecf9a0eedbbbe}{add\+\_\+row}} (\$args=array())
+\item 
+\mbox{\hyperlink{class_c_i___table_ab6146f0f242d4bc75169c8f8e622e979}{set\+\_\+caption}} (\$caption)
+\item 
+\mbox{\hyperlink{class_c_i___table_ad46f79939e16f261c19157809d56aab8}{generate}} (\$table\+\_\+data=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_c_i___table_aa821bec12eaa7e0f649397c9675ff505}{clear}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributen}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_i___table_ace2ec39e7df3899fa8df9640ec274b03}\label{class_c_i___table_ace2ec39e7df3899fa8df9640ec274b03}} 
+{\bfseries \$rows} = array()
+\item 
+\mbox{\Hypertarget{class_c_i___table_a196169be7715d466e3310388b096598c}\label{class_c_i___table_a196169be7715d466e3310388b096598c}} 
+{\bfseries \$heading} = array()
+\item 
+\mbox{\Hypertarget{class_c_i___table_a394ea4ec17bcd63228039d7767bfb092}\label{class_c_i___table_a394ea4ec17bcd63228039d7767bfb092}} 
+{\bfseries \$auto\+\_\+heading} = T\+R\+UE
+\item 
+\mbox{\Hypertarget{class_c_i___table_a4f9340ccb02c5d876a448a1d860f3812}\label{class_c_i___table_a4f9340ccb02c5d876a448a1d860f3812}} 
+{\bfseries \$caption} = N\+U\+LL
+\item 
+\mbox{\Hypertarget{class_c_i___table_aa3e9534005fd516d941f6a5569896e01}\label{class_c_i___table_aa3e9534005fd516d941f6a5569896e01}} 
+{\bfseries \$template} = N\+U\+LL
+\item 
+\mbox{\Hypertarget{class_c_i___table_a8735d5c31c4af1004825e6a28f236aeb}\label{class_c_i___table_a8735d5c31c4af1004825e6a28f236aeb}} 
+{\bfseries \$newline} = \char`\"{}\textbackslash{}n\char`\"{}
+\item 
+\mbox{\Hypertarget{class_c_i___table_aeba996c863f9ba0e2c9e24d0491bb976}\label{class_c_i___table_aeba996c863f9ba0e2c9e24d0491bb976}} 
+{\bfseries \$empty\+\_\+cells} = \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\Hypertarget{class_c_i___table_af3e5d0d1ff43879d493dd97bb760c479}\label{class_c_i___table_af3e5d0d1ff43879d493dd97bb760c479}} 
+{\bfseries \$function} = N\+U\+LL
+\end{DoxyCompactItemize}
+\subsection*{Protected Members}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___table_aec91c20b757a8a063e4147f0aebe8b1b}{\+\_\+prep\+\_\+args}} (\$args)
+\item 
+\mbox{\hyperlink{class_c_i___table_a76d76f4f5ffe03c119b95164dcebf9ed}{\+\_\+set\+\_\+from\+\_\+db\+\_\+result}} (\$object)
+\item 
+\mbox{\hyperlink{class_c_i___table_a79c6ca8fd1f4e5b4bee157209e866a02}{\+\_\+set\+\_\+from\+\_\+array}} (\$data)
+\item 
+\mbox{\hyperlink{class_c_i___table_a7f408fd4eecadb5799d5ae004170c4d6}{\+\_\+compile\+\_\+template}} ()
+\item 
+\mbox{\hyperlink{class_c_i___table_ae1990fcb9ffc455614eeac9a1091f0b0}{\+\_\+default\+\_\+template}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentatie}
+\mbox{\Hypertarget{class_c_i___table_af7f9493844d2d66e924e3c1df51ce616}\label{class_c_i___table_af7f9493844d2d66e924e3c1df51ce616}} 
+\index{CI\_Table@{CI\_Table}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!CI\_Table@{CI\_Table}}
+\subsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$config = {\ttfamily array()} }\end{DoxyParamCaption})}
+
+Set the template from the table config file if it exists
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$config} & (default\+: array()) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retourneert}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Documentatie van functie members}
+\mbox{\Hypertarget{class_c_i___table_a7f408fd4eecadb5799d5ae004170c4d6}\label{class_c_i___table_a7f408fd4eecadb5799d5ae004170c4d6}} 
+\index{CI\_Table@{CI\_Table}!\_compile\_template@{\_compile\_template}}
+\index{\_compile\_template@{\_compile\_template}!CI\_Table@{CI\_Table}}
+\subsubsection{\texorpdfstring{\_compile\_template()}{\_compile\_template()}}
+{\footnotesize\ttfamily \+\_\+compile\+\_\+template (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Compile \mbox{\hyperlink{class_template}{Template}}
+
+\begin{DoxyReturn}{Retourneert}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___table_ae1990fcb9ffc455614eeac9a1091f0b0}\label{class_c_i___table_ae1990fcb9ffc455614eeac9a1091f0b0}} 
+\index{CI\_Table@{CI\_Table}!\_default\_template@{\_default\_template}}
+\index{\_default\_template@{\_default\_template}!CI\_Table@{CI\_Table}}
+\subsubsection{\texorpdfstring{\_default\_template()}{\_default\_template()}}
+{\footnotesize\ttfamily \+\_\+default\+\_\+template (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Default \mbox{\hyperlink{class_template}{Template}}
+
+\begin{DoxyReturn}{Retourneert}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___table_aec91c20b757a8a063e4147f0aebe8b1b}\label{class_c_i___table_aec91c20b757a8a063e4147f0aebe8b1b}} 
+\index{CI\_Table@{CI\_Table}!\_prep\_args@{\_prep\_args}}
+\index{\_prep\_args@{\_prep\_args}!CI\_Table@{CI\_Table}}
+\subsubsection{\texorpdfstring{\_prep\_args()}{\_prep\_args()}}
+{\footnotesize\ttfamily \+\_\+prep\+\_\+args (\begin{DoxyParamCaption}\item[{}]{\$args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Prep Args
+
+Ensures a standard associative array format for all cell data
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retourneert}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___table_a79c6ca8fd1f4e5b4bee157209e866a02}\label{class_c_i___table_a79c6ca8fd1f4e5b4bee157209e866a02}} 
+\index{CI\_Table@{CI\_Table}!\_set\_from\_array@{\_set\_from\_array}}
+\index{\_set\_from\_array@{\_set\_from\_array}!CI\_Table@{CI\_Table}}
+\subsubsection{\texorpdfstring{\_set\_from\_array()}{\_set\_from\_array()}}
+{\footnotesize\ttfamily \+\_\+set\+\_\+from\+\_\+array (\begin{DoxyParamCaption}\item[{}]{\$data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Set table data from an array
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retourneert}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___table_a76d76f4f5ffe03c119b95164dcebf9ed}\label{class_c_i___table_a76d76f4f5ffe03c119b95164dcebf9ed}} 
+\index{CI\_Table@{CI\_Table}!\_set\_from\_db\_result@{\_set\_from\_db\_result}}
+\index{\_set\_from\_db\_result@{\_set\_from\_db\_result}!CI\_Table@{CI\_Table}}
+\subsubsection{\texorpdfstring{\_set\_from\_db\_result()}{\_set\_from\_db\_result()}}
+{\footnotesize\ttfamily \+\_\+set\+\_\+from\+\_\+db\+\_\+result (\begin{DoxyParamCaption}\item[{}]{\$object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Set table data from a database result object
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\hyperlink{class_c_i___d_b__result}{C\+I\+\_\+\+D\+B\+\_\+result}} & {\em \$object} & Database result object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retourneert}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___table_aed032b02068e33116d9ecf9a0eedbbbe}\label{class_c_i___table_aed032b02068e33116d9ecf9a0eedbbbe}} 
+\index{CI\_Table@{CI\_Table}!add\_row@{add\_row}}
+\index{add\_row@{add\_row}!CI\_Table@{CI\_Table}}
+\subsubsection{\texorpdfstring{add\_row()}{add\_row()}}
+{\footnotesize\ttfamily add\+\_\+row (\begin{DoxyParamCaption}\item[{}]{\$args = {\ttfamily array()} }\end{DoxyParamCaption})}
+
+Add a table row
+
+Can be passed as an array or discreet params
+
+
+\begin{DoxyParams}{Parameters}
+{\em mixed} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retourneert}
+\mbox{\hyperlink{class_c_i___table}{C\+I\+\_\+\+Table}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___table_aa821bec12eaa7e0f649397c9675ff505}\label{class_c_i___table_aa821bec12eaa7e0f649397c9675ff505}} 
+\index{CI\_Table@{CI\_Table}!clear@{clear}}
+\index{clear@{clear}!CI\_Table@{CI\_Table}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Clears the table arrays. Useful if multiple tables are being generated
+
+\begin{DoxyReturn}{Retourneert}
+\mbox{\hyperlink{class_c_i___table}{C\+I\+\_\+\+Table}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___table_ad46f79939e16f261c19157809d56aab8}\label{class_c_i___table_ad46f79939e16f261c19157809d56aab8}} 
+\index{CI\_Table@{CI\_Table}!generate@{generate}}
+\index{generate@{generate}!CI\_Table@{CI\_Table}}
+\subsubsection{\texorpdfstring{generate()}{generate()}}
+{\footnotesize\ttfamily generate (\begin{DoxyParamCaption}\item[{}]{\$table\+\_\+data = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+Generate the table
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$table\+\_\+data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retourneert}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___table_a816eac03a6a38820918890170fd7e0d0}\label{class_c_i___table_a816eac03a6a38820918890170fd7e0d0}} 
+\index{CI\_Table@{CI\_Table}!make\_columns@{make\_columns}}
+\index{make\_columns@{make\_columns}!CI\_Table@{CI\_Table}}
+\subsubsection{\texorpdfstring{make\_columns()}{make\_columns()}}
+{\footnotesize\ttfamily make\+\_\+columns (\begin{DoxyParamCaption}\item[{}]{\$array = {\ttfamily array()},  }\item[{}]{\$col\+\_\+limit = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Set columns. Takes a one-\/dimensional array as input and creates a multi-\/dimensional array with a depth equal to the number of columns. This allows a single array with many elements to be displayed in a table that has a fixed column count.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$array} & \\
+\hline
+int & {\em \$col\+\_\+limit} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retourneert}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___table_ab6146f0f242d4bc75169c8f8e622e979}\label{class_c_i___table_ab6146f0f242d4bc75169c8f8e622e979}} 
+\index{CI\_Table@{CI\_Table}!set\_caption@{set\_caption}}
+\index{set\_caption@{set\_caption}!CI\_Table@{CI\_Table}}
+\subsubsection{\texorpdfstring{set\_caption()}{set\_caption()}}
+{\footnotesize\ttfamily set\+\_\+caption (\begin{DoxyParamCaption}\item[{}]{\$caption }\end{DoxyParamCaption})}
+
+Add a table caption
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$caption} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retourneert}
+\mbox{\hyperlink{class_c_i___table}{C\+I\+\_\+\+Table}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___table_a20b008428100a2b740c02c4bcaa45cf6}\label{class_c_i___table_a20b008428100a2b740c02c4bcaa45cf6}} 
+\index{CI\_Table@{CI\_Table}!set\_empty@{set\_empty}}
+\index{set\_empty@{set\_empty}!CI\_Table@{CI\_Table}}
+\subsubsection{\texorpdfstring{set\_empty()}{set\_empty()}}
+{\footnotesize\ttfamily set\+\_\+empty (\begin{DoxyParamCaption}\item[{}]{\$value }\end{DoxyParamCaption})}
+
+Set \char`\"{}empty\char`\"{} cells
+
+Can be passed as an array or discreet params
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retourneert}
+\mbox{\hyperlink{class_c_i___table}{C\+I\+\_\+\+Table}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___table_ac35607094955ce966330d6af51d221ef}\label{class_c_i___table_ac35607094955ce966330d6af51d221ef}} 
+\index{CI\_Table@{CI\_Table}!set\_heading@{set\_heading}}
+\index{set\_heading@{set\_heading}!CI\_Table@{CI\_Table}}
+\subsubsection{\texorpdfstring{set\_heading()}{set\_heading()}}
+{\footnotesize\ttfamily set\+\_\+heading (\begin{DoxyParamCaption}\item[{}]{\$args = {\ttfamily array()} }\end{DoxyParamCaption})}
+
+Set the table heading
+
+Can be passed as an array or discreet params
+
+
+\begin{DoxyParams}{Parameters}
+{\em mixed} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retourneert}
+\mbox{\hyperlink{class_c_i___table}{C\+I\+\_\+\+Table}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___table_ae65d1ab2a626d4ddfda31befc2b347f6}\label{class_c_i___table_ae65d1ab2a626d4ddfda31befc2b347f6}} 
+\index{CI\_Table@{CI\_Table}!set\_template@{set\_template}}
+\index{set\_template@{set\_template}!CI\_Table@{CI\_Table}}
+\subsubsection{\texorpdfstring{set\_template()}{set\_template()}}
+{\footnotesize\ttfamily set\+\_\+template (\begin{DoxyParamCaption}\item[{}]{\$template }\end{DoxyParamCaption})}
+
+Set the template
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$template} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retourneert}
+bool 
+\end{DoxyReturn}
+
+
+De documentatie voor deze klasse is gegenereerd op grond van het volgende bestand\+:\begin{DoxyCompactItemize}
+\item 
+system/libraries/Table.\+php\end{DoxyCompactItemize}

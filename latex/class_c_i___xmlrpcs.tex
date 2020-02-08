@@ -1,0 +1,270 @@
+\hypertarget{class_c_i___xmlrpcs}{}\section{C\+I\+\_\+\+Xmlrpcs Class Referentie}
+\label{class_c_i___xmlrpcs}\index{CI\_Xmlrpcs@{CI\_Xmlrpcs}}
+Klasse diagram voor C\+I\+\_\+\+Xmlrpcs\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_i___xmlrpcs}
+\end{center}
+\end{figure}
+\subsection*{Public Members}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___xmlrpcs_af7f9493844d2d66e924e3c1df51ce616}{\+\_\+\+\_\+construct}} (\$config=array())
+\item 
+\mbox{\hyperlink{class_c_i___xmlrpcs_a481385e36d920f5a5005ace05c6cd016}{initialize}} (\$config=array())
+\item 
+\mbox{\hyperlink{class_c_i___xmlrpcs_a858a05529612358b8f63c88b08b414d0}{set\+\_\+system\+\_\+methods}} ()
+\item 
+\mbox{\hyperlink{class_c_i___xmlrpcs_aa9e0b443b9575f62bf9f8e85b1742c96}{serve}} ()
+\item 
+\mbox{\hyperlink{class_c_i___xmlrpcs_a73b29191620c55a5e2d3fda3a5c3cf44}{add\+\_\+to\+\_\+map}} (\$methodname, \$function, \$sig, \$doc)
+\item 
+\mbox{\hyperlink{class_c_i___xmlrpcs_a8a0c34554b9238be766ab85f55519b6e}{parse\+Request}} (\$data=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_c_i___xmlrpcs_ad640f0b44d1956a05cfe40bab4e4043d}{list\+Methods}} (\$m)
+\item 
+\mbox{\hyperlink{class_c_i___xmlrpcs_a9f96cc0bd3338094174eb22cd90d6f2a}{method\+Signature}} (\$m)
+\item 
+\mbox{\hyperlink{class_c_i___xmlrpcs_a97626f30e860f4a63463f8674827dc00}{method\+Help}} (\$m)
+\item 
+\mbox{\hyperlink{class_c_i___xmlrpcs_a122ce829a1aa3f0041f922ec5feb95c8}{multicall}} (\$m)
+\item 
+\mbox{\hyperlink{class_c_i___xmlrpcs_a4cf545e6c15e1487b223346b18ca017d}{multicall\+\_\+error}} (\$err)
+\item 
+\mbox{\hyperlink{class_c_i___xmlrpcs_ab76189ac2d65f1e3ab6d65128e3748d5}{do\+\_\+multicall}} (\$call)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributen}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_i___xmlrpcs_a802753499268a04da139bd6e6ef89b35}\label{class_c_i___xmlrpcs_a802753499268a04da139bd6e6ef89b35}} 
+{\bfseries \$methods} = array()
+\item 
+\mbox{\Hypertarget{class_c_i___xmlrpcs_afed2f9c39f2e406bcdff222ce412bda8}\label{class_c_i___xmlrpcs_afed2f9c39f2e406bcdff222ce412bda8}} 
+{\bfseries \$debug\+\_\+msg} = \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\Hypertarget{class_c_i___xmlrpcs_a07c837152d76c5e72b0bd7a065fa9c10}\label{class_c_i___xmlrpcs_a07c837152d76c5e72b0bd7a065fa9c10}} 
+{\bfseries \$system\+\_\+methods} = array()
+\item 
+\mbox{\Hypertarget{class_c_i___xmlrpcs_a52123b83a1952a68c5513e47d59ec4a6}\label{class_c_i___xmlrpcs_a52123b83a1952a68c5513e47d59ec4a6}} 
+{\bfseries \$object} = F\+A\+L\+SE
+\end{DoxyCompactItemize}
+\subsection*{Protected Members}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___xmlrpcs_a2f039adb8ec59c693300993c95138b46}{\+\_\+execute}} (\$m)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentatie}
+\mbox{\Hypertarget{class_c_i___xmlrpcs_af7f9493844d2d66e924e3c1df51ce616}\label{class_c_i___xmlrpcs_af7f9493844d2d66e924e3c1df51ce616}} 
+\index{CI\_Xmlrpcs@{CI\_Xmlrpcs}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!CI\_Xmlrpcs@{CI\_Xmlrpcs}}
+\subsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$config = {\ttfamily array()} }\end{DoxyParamCaption})}
+
+Initialize X\+M\+L\+R\+PC class
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$config} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retourneert}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Documentatie van functie members}
+\mbox{\Hypertarget{class_c_i___xmlrpcs_a2f039adb8ec59c693300993c95138b46}\label{class_c_i___xmlrpcs_a2f039adb8ec59c693300993c95138b46}} 
+\index{CI\_Xmlrpcs@{CI\_Xmlrpcs}!\_execute@{\_execute}}
+\index{\_execute@{\_execute}!CI\_Xmlrpcs@{CI\_Xmlrpcs}}
+\subsubsection{\texorpdfstring{\_execute()}{\_execute()}}
+{\footnotesize\ttfamily \+\_\+execute (\begin{DoxyParamCaption}\item[{}]{\$m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Executes the Method
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retourneert}
+mixed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___xmlrpcs_a73b29191620c55a5e2d3fda3a5c3cf44}\label{class_c_i___xmlrpcs_a73b29191620c55a5e2d3fda3a5c3cf44}} 
+\index{CI\_Xmlrpcs@{CI\_Xmlrpcs}!add\_to\_map@{add\_to\_map}}
+\index{add\_to\_map@{add\_to\_map}!CI\_Xmlrpcs@{CI\_Xmlrpcs}}
+\subsubsection{\texorpdfstring{add\_to\_map()}{add\_to\_map()}}
+{\footnotesize\ttfamily add\+\_\+to\+\_\+map (\begin{DoxyParamCaption}\item[{}]{\$methodname,  }\item[{}]{\$function,  }\item[{}]{\$sig,  }\item[{}]{\$doc }\end{DoxyParamCaption})}
+
+Add Method to Class
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & method name \\
+\hline
+{\em string} & function \\
+\hline
+{\em string} & signature \\
+\hline
+{\em string} & docstring \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retourneert}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___xmlrpcs_ab76189ac2d65f1e3ab6d65128e3748d5}\label{class_c_i___xmlrpcs_ab76189ac2d65f1e3ab6d65128e3748d5}} 
+\index{CI\_Xmlrpcs@{CI\_Xmlrpcs}!do\_multicall@{do\_multicall}}
+\index{do\_multicall@{do\_multicall}!CI\_Xmlrpcs@{CI\_Xmlrpcs}}
+\subsubsection{\texorpdfstring{do\_multicall()}{do\_multicall()}}
+{\footnotesize\ttfamily do\+\_\+multicall (\begin{DoxyParamCaption}\item[{}]{\$call }\end{DoxyParamCaption})}
+
+Multi-\/call Function\+: Processes method
+
+
+\begin{DoxyParams}{Parameters}
+{\em mixed} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retourneert}
+object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___xmlrpcs_a481385e36d920f5a5005ace05c6cd016}\label{class_c_i___xmlrpcs_a481385e36d920f5a5005ace05c6cd016}} 
+\index{CI\_Xmlrpcs@{CI\_Xmlrpcs}!initialize@{initialize}}
+\index{initialize@{initialize}!CI\_Xmlrpcs@{CI\_Xmlrpcs}}
+\subsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily initialize (\begin{DoxyParamCaption}\item[{}]{\$config = {\ttfamily array()} }\end{DoxyParamCaption})}
+
+Initialize Prefs and Serve
+
+
+\begin{DoxyParams}{Parameters}
+{\em mixed} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retourneert}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___xmlrpcs_ad640f0b44d1956a05cfe40bab4e4043d}\label{class_c_i___xmlrpcs_ad640f0b44d1956a05cfe40bab4e4043d}} 
+\index{CI\_Xmlrpcs@{CI\_Xmlrpcs}!listMethods@{listMethods}}
+\index{listMethods@{listMethods}!CI\_Xmlrpcs@{CI\_Xmlrpcs}}
+\subsubsection{\texorpdfstring{listMethods()}{listMethods()}}
+{\footnotesize\ttfamily list\+Methods (\begin{DoxyParamCaption}\item[{}]{\$m }\end{DoxyParamCaption})}
+
+Server Function\+: List Methods
+
+
+\begin{DoxyParams}{Parameters}
+{\em mixed} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retourneert}
+object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___xmlrpcs_a97626f30e860f4a63463f8674827dc00}\label{class_c_i___xmlrpcs_a97626f30e860f4a63463f8674827dc00}} 
+\index{CI\_Xmlrpcs@{CI\_Xmlrpcs}!methodHelp@{methodHelp}}
+\index{methodHelp@{methodHelp}!CI\_Xmlrpcs@{CI\_Xmlrpcs}}
+\subsubsection{\texorpdfstring{methodHelp()}{methodHelp()}}
+{\footnotesize\ttfamily method\+Help (\begin{DoxyParamCaption}\item[{}]{\$m }\end{DoxyParamCaption})}
+
+Server Function\+: Doc String for Method
+
+
+\begin{DoxyParams}{Parameters}
+{\em mixed} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retourneert}
+object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___xmlrpcs_a9f96cc0bd3338094174eb22cd90d6f2a}\label{class_c_i___xmlrpcs_a9f96cc0bd3338094174eb22cd90d6f2a}} 
+\index{CI\_Xmlrpcs@{CI\_Xmlrpcs}!methodSignature@{methodSignature}}
+\index{methodSignature@{methodSignature}!CI\_Xmlrpcs@{CI\_Xmlrpcs}}
+\subsubsection{\texorpdfstring{methodSignature()}{methodSignature()}}
+{\footnotesize\ttfamily method\+Signature (\begin{DoxyParamCaption}\item[{}]{\$m }\end{DoxyParamCaption})}
+
+Server Function\+: Return Signature for Method
+
+
+\begin{DoxyParams}{Parameters}
+{\em mixed} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retourneert}
+object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___xmlrpcs_a122ce829a1aa3f0041f922ec5feb95c8}\label{class_c_i___xmlrpcs_a122ce829a1aa3f0041f922ec5feb95c8}} 
+\index{CI\_Xmlrpcs@{CI\_Xmlrpcs}!multicall@{multicall}}
+\index{multicall@{multicall}!CI\_Xmlrpcs@{CI\_Xmlrpcs}}
+\subsubsection{\texorpdfstring{multicall()}{multicall()}}
+{\footnotesize\ttfamily multicall (\begin{DoxyParamCaption}\item[{}]{\$m }\end{DoxyParamCaption})}
+
+Server Function\+: Multi-\/call
+
+
+\begin{DoxyParams}{Parameters}
+{\em mixed} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retourneert}
+object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___xmlrpcs_a4cf545e6c15e1487b223346b18ca017d}\label{class_c_i___xmlrpcs_a4cf545e6c15e1487b223346b18ca017d}} 
+\index{CI\_Xmlrpcs@{CI\_Xmlrpcs}!multicall\_error@{multicall\_error}}
+\index{multicall\_error@{multicall\_error}!CI\_Xmlrpcs@{CI\_Xmlrpcs}}
+\subsubsection{\texorpdfstring{multicall\_error()}{multicall\_error()}}
+{\footnotesize\ttfamily multicall\+\_\+error (\begin{DoxyParamCaption}\item[{}]{\$err }\end{DoxyParamCaption})}
+
+Multi-\/call Function\+: Error Handling
+
+
+\begin{DoxyParams}{Parameters}
+{\em mixed} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retourneert}
+object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___xmlrpcs_a8a0c34554b9238be766ab85f55519b6e}\label{class_c_i___xmlrpcs_a8a0c34554b9238be766ab85f55519b6e}} 
+\index{CI\_Xmlrpcs@{CI\_Xmlrpcs}!parseRequest@{parseRequest}}
+\index{parseRequest@{parseRequest}!CI\_Xmlrpcs@{CI\_Xmlrpcs}}
+\subsubsection{\texorpdfstring{parseRequest()}{parseRequest()}}
+{\footnotesize\ttfamily parse\+Request (\begin{DoxyParamCaption}\item[{}]{\$data = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Parse Server Request
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retourneert}
+object xmlrpc response 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___xmlrpcs_aa9e0b443b9575f62bf9f8e85b1742c96}\label{class_c_i___xmlrpcs_aa9e0b443b9575f62bf9f8e85b1742c96}} 
+\index{CI\_Xmlrpcs@{CI\_Xmlrpcs}!serve@{serve}}
+\index{serve@{serve}!CI\_Xmlrpcs@{CI\_Xmlrpcs}}
+\subsubsection{\texorpdfstring{serve()}{serve()}}
+{\footnotesize\ttfamily serve (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Main Server Function
+
+\begin{DoxyReturn}{Retourneert}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___xmlrpcs_a858a05529612358b8f63c88b08b414d0}\label{class_c_i___xmlrpcs_a858a05529612358b8f63c88b08b414d0}} 
+\index{CI\_Xmlrpcs@{CI\_Xmlrpcs}!set\_system\_methods@{set\_system\_methods}}
+\index{set\_system\_methods@{set\_system\_methods}!CI\_Xmlrpcs@{CI\_Xmlrpcs}}
+\subsubsection{\texorpdfstring{set\_system\_methods()}{set\_system\_methods()}}
+{\footnotesize\ttfamily set\+\_\+system\+\_\+methods (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Setting of System Methods
+
+\begin{DoxyReturn}{Retourneert}
+void 
+\end{DoxyReturn}
+
+
+De documentatie voor deze klasse is gegenereerd op grond van het volgende bestand\+:\begin{DoxyCompactItemize}
+\item 
+system/libraries/Xmlrpcs.\+php\end{DoxyCompactItemize}

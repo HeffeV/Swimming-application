@@ -1,0 +1,68 @@
+\hypertarget{class_c_i___driver___library}{}\section{C\+I\+\_\+\+Driver\+\_\+\+Library Class Referentie}
+\label{class_c_i___driver___library}\index{CI\_Driver\_Library@{CI\_Driver\_Library}}
+Klasse diagram voor C\+I\+\_\+\+Driver\+\_\+\+Library\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_i___driver___library}
+\end{center}
+\end{figure}
+\subsection*{Public Members}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___driver___library_a2fac4d4694e05e7eeba5282bd6ff8caf}{\+\_\+\+\_\+get}} (\$child)
+\item 
+\mbox{\hyperlink{class_c_i___driver___library_a7cc2908487e106164664ef7d743690b8}{load\+\_\+driver}} (\$child)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributen}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_i___driver___library_a32d963b3d49fd67f188c1a74d38be6df}\label{class_c_i___driver___library_a32d963b3d49fd67f188c1a74d38be6df}} 
+{\bfseries \$valid\+\_\+drivers} = array()
+\item 
+\mbox{\Hypertarget{class_c_i___driver___library_ab820c27413d5904686c58f6b2941b603}\label{class_c_i___driver___library_ab820c27413d5904686c58f6b2941b603}} 
+{\bfseries \$lib\+\_\+name}
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentatie van functie members}
+\mbox{\Hypertarget{class_c_i___driver___library_a2fac4d4694e05e7eeba5282bd6ff8caf}\label{class_c_i___driver___library_a2fac4d4694e05e7eeba5282bd6ff8caf}} 
+\index{CI\_Driver\_Library@{CI\_Driver\_Library}!\_\_get@{\_\_get}}
+\index{\_\_get@{\_\_get}!CI\_Driver\_Library@{CI\_Driver\_Library}}
+\subsubsection{\texorpdfstring{\_\_get()}{\_\_get()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+get (\begin{DoxyParamCaption}\item[{}]{\$child }\end{DoxyParamCaption})}
+
+Get magic method
+
+The first time a child is used it won\textquotesingle{}t exist, so we instantiate it subsequents calls will go straight to the proper child.
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & Child class name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retourneert}
+object Child class 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___driver___library_a7cc2908487e106164664ef7d743690b8}\label{class_c_i___driver___library_a7cc2908487e106164664ef7d743690b8}} 
+\index{CI\_Driver\_Library@{CI\_Driver\_Library}!load\_driver@{load\_driver}}
+\index{load\_driver@{load\_driver}!CI\_Driver\_Library@{CI\_Driver\_Library}}
+\subsubsection{\texorpdfstring{load\_driver()}{load\_driver()}}
+{\footnotesize\ttfamily load\+\_\+driver (\begin{DoxyParamCaption}\item[{}]{\$child }\end{DoxyParamCaption})}
+
+Load driver
+
+Separate load\+\_\+driver call to support explicit driver load by library or user
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & Driver name (w/o parent prefix) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retourneert}
+object Child class 
+\end{DoxyReturn}
+
+
+De documentatie voor deze klasse is gegenereerd op grond van het volgende bestand\+:\begin{DoxyCompactItemize}
+\item 
+system/libraries/Driver.\+php\end{DoxyCompactItemize}

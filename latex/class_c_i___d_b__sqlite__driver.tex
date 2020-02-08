@@ -1,0 +1,298 @@
+\hypertarget{class_c_i___d_b__sqlite__driver}{}\section{C\+I\+\_\+\+D\+B\+\_\+sqlite\+\_\+driver Class Referentie}
+\label{class_c_i___d_b__sqlite__driver}\index{CI\_DB\_sqlite\_driver@{CI\_DB\_sqlite\_driver}}
+Klasse diagram voor C\+I\+\_\+\+D\+B\+\_\+sqlite\+\_\+driver\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_i___d_b__sqlite__driver}
+\end{center}
+\end{figure}
+\subsection*{Public Members}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___d_b__sqlite__driver_a52bf595e79e96cc0a7c907a9b45aeb4d}{db\+\_\+connect}} (\$persistent=F\+A\+L\+SE)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__sqlite__driver_a6080dae0886626b9a4cedb29240708b1}{version}} ()
+\item 
+\mbox{\hyperlink{class_c_i___d_b__sqlite__driver_a77248aaad33eb132c04cc4aa3f4bc8cb}{affected\+\_\+rows}} ()
+\item 
+\mbox{\hyperlink{class_c_i___d_b__sqlite__driver_a933f2cde8dc7f87875e257d0a4902e99}{insert\+\_\+id}} ()
+\item 
+\mbox{\hyperlink{class_c_i___d_b__sqlite__driver_a90355121e1ed009e0efdbd544ab56efa}{field\+\_\+data}} (\$table)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__sqlite__driver_a43b8d30b879d4f09ceb059b02af2bc02}{error}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributen}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__sqlite__driver_a0cde2a16322a023d040aa7f725877597}\label{class_c_i___d_b__sqlite__driver_a0cde2a16322a023d040aa7f725877597}} 
+{\bfseries \$dbdriver} = \textquotesingle{}sqlite\textquotesingle{}
+\end{DoxyCompactItemize}
+\subsection*{Protected Members}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_i___d_b__sqlite__driver_a114ab675d89bf8324a41785fb475e86d}{\+\_\+execute}} (\$sql)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__sqlite__driver_ac81ac882c1d54347d810199a15856aac}{\+\_\+trans\+\_\+begin}} ()
+\item 
+\mbox{\hyperlink{class_c_i___d_b__sqlite__driver_a6fe7f373e0b11cfae23a5f41c0b35dda}{\+\_\+trans\+\_\+commit}} ()
+\item 
+\mbox{\hyperlink{class_c_i___d_b__sqlite__driver_ad49a116b0776c26b53114c9093fd102a}{\+\_\+trans\+\_\+rollback}} ()
+\item 
+\mbox{\hyperlink{class_c_i___d_b__sqlite__driver_af8ef0237bfcdb19215b63fff769e7a55}{\+\_\+escape\+\_\+str}} (\$str)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__sqlite__driver_a435c0f3ce54fe7daa178baa8532ebd54}{\+\_\+list\+\_\+tables}} (\$prefix\+\_\+limit=F\+A\+L\+SE)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__sqlite__driver_a7ccb7f9c301fe7f0a9db701254142b63}{\+\_\+list\+\_\+columns}} (\$table=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_c_i___d_b__sqlite__driver_ae0adf73984daf2d42ad29b66c484c82b}{\+\_\+replace}} (\$table, \$keys, \$values)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__sqlite__driver_aa029600528fc1ce660a23ff4b4667f95}{\+\_\+truncate}} (\$table)
+\item 
+\mbox{\hyperlink{class_c_i___d_b__sqlite__driver_a4d9082658000e5ede8312067c6dda9db}{\+\_\+close}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributen}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_i___d_b__sqlite__driver_a10213aa6e05f6d924d3277bb1d2fea00}\label{class_c_i___d_b__sqlite__driver_a10213aa6e05f6d924d3277bb1d2fea00}} 
+{\bfseries \$\+\_\+random\+\_\+keyword} = array(\textquotesingle{}R\+A\+N\+D\+OM()\textquotesingle{}, \textquotesingle{}R\+A\+N\+D\+OM()\textquotesingle{})
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentatie van functie members}
+\mbox{\Hypertarget{class_c_i___d_b__sqlite__driver_a4d9082658000e5ede8312067c6dda9db}\label{class_c_i___d_b__sqlite__driver_a4d9082658000e5ede8312067c6dda9db}} 
+\index{CI\_DB\_sqlite\_driver@{CI\_DB\_sqlite\_driver}!\_close@{\_close}}
+\index{\_close@{\_close}!CI\_DB\_sqlite\_driver@{CI\_DB\_sqlite\_driver}}
+\subsubsection{\texorpdfstring{\_close()}{\_close()}}
+{\footnotesize\ttfamily \+\_\+close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Close DB Connection
+
+\begin{DoxyReturn}{Retourneert}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__sqlite__driver_af8ef0237bfcdb19215b63fff769e7a55}\label{class_c_i___d_b__sqlite__driver_af8ef0237bfcdb19215b63fff769e7a55}} 
+\index{CI\_DB\_sqlite\_driver@{CI\_DB\_sqlite\_driver}!\_escape\_str@{\_escape\_str}}
+\index{\_escape\_str@{\_escape\_str}!CI\_DB\_sqlite\_driver@{CI\_DB\_sqlite\_driver}}
+\subsubsection{\texorpdfstring{\_escape\_str()}{\_escape\_str()}}
+{\footnotesize\ttfamily \+\_\+escape\+\_\+str (\begin{DoxyParamCaption}\item[{}]{\$str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Platform-\/dependant string escape
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retourneert}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__sqlite__driver_a114ab675d89bf8324a41785fb475e86d}\label{class_c_i___d_b__sqlite__driver_a114ab675d89bf8324a41785fb475e86d}} 
+\index{CI\_DB\_sqlite\_driver@{CI\_DB\_sqlite\_driver}!\_execute@{\_execute}}
+\index{\_execute@{\_execute}!CI\_DB\_sqlite\_driver@{CI\_DB\_sqlite\_driver}}
+\subsubsection{\texorpdfstring{\_execute()}{\_execute()}}
+{\footnotesize\ttfamily \+\_\+execute (\begin{DoxyParamCaption}\item[{}]{\$sql }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Execute the query
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$sql} & an S\+QL query \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retourneert}
+resource 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__sqlite__driver_a7ccb7f9c301fe7f0a9db701254142b63}\label{class_c_i___d_b__sqlite__driver_a7ccb7f9c301fe7f0a9db701254142b63}} 
+\index{CI\_DB\_sqlite\_driver@{CI\_DB\_sqlite\_driver}!\_list\_columns@{\_list\_columns}}
+\index{\_list\_columns@{\_list\_columns}!CI\_DB\_sqlite\_driver@{CI\_DB\_sqlite\_driver}}
+\subsubsection{\texorpdfstring{\_list\_columns()}{\_list\_columns()}}
+{\footnotesize\ttfamily \+\_\+list\+\_\+columns (\begin{DoxyParamCaption}\item[{}]{\$table = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Show column query
+
+Generates a platform-\/specific query string so that the column names can be fetched
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retourneert}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__sqlite__driver_a435c0f3ce54fe7daa178baa8532ebd54}\label{class_c_i___d_b__sqlite__driver_a435c0f3ce54fe7daa178baa8532ebd54}} 
+\index{CI\_DB\_sqlite\_driver@{CI\_DB\_sqlite\_driver}!\_list\_tables@{\_list\_tables}}
+\index{\_list\_tables@{\_list\_tables}!CI\_DB\_sqlite\_driver@{CI\_DB\_sqlite\_driver}}
+\subsubsection{\texorpdfstring{\_list\_tables()}{\_list\_tables()}}
+{\footnotesize\ttfamily \+\_\+list\+\_\+tables (\begin{DoxyParamCaption}\item[{}]{\$prefix\+\_\+limit = {\ttfamily FALSE} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+List table query
+
+Generates a platform-\/specific query string so that the table names can be fetched
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$prefix\+\_\+limit} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retourneert}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__sqlite__driver_ae0adf73984daf2d42ad29b66c484c82b}\label{class_c_i___d_b__sqlite__driver_ae0adf73984daf2d42ad29b66c484c82b}} 
+\index{CI\_DB\_sqlite\_driver@{CI\_DB\_sqlite\_driver}!\_replace@{\_replace}}
+\index{\_replace@{\_replace}!CI\_DB\_sqlite\_driver@{CI\_DB\_sqlite\_driver}}
+\subsubsection{\texorpdfstring{\_replace()}{\_replace()}}
+{\footnotesize\ttfamily \+\_\+replace (\begin{DoxyParamCaption}\item[{}]{\$table,  }\item[{}]{\$keys,  }\item[{}]{\$values }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Replace statement
+
+Generates a platform-\/specific replace string from the supplied data
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & Table name \\
+\hline
+array & {\em \$keys} & I\+N\+S\+E\+RT keys \\
+\hline
+array & {\em \$values} & I\+N\+S\+E\+RT values \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retourneert}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__sqlite__driver_ac81ac882c1d54347d810199a15856aac}\label{class_c_i___d_b__sqlite__driver_ac81ac882c1d54347d810199a15856aac}} 
+\index{CI\_DB\_sqlite\_driver@{CI\_DB\_sqlite\_driver}!\_trans\_begin@{\_trans\_begin}}
+\index{\_trans\_begin@{\_trans\_begin}!CI\_DB\_sqlite\_driver@{CI\_DB\_sqlite\_driver}}
+\subsubsection{\texorpdfstring{\_trans\_begin()}{\_trans\_begin()}}
+{\footnotesize\ttfamily \+\_\+trans\+\_\+begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Begin Transaction
+
+\begin{DoxyReturn}{Retourneert}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__sqlite__driver_a6fe7f373e0b11cfae23a5f41c0b35dda}\label{class_c_i___d_b__sqlite__driver_a6fe7f373e0b11cfae23a5f41c0b35dda}} 
+\index{CI\_DB\_sqlite\_driver@{CI\_DB\_sqlite\_driver}!\_trans\_commit@{\_trans\_commit}}
+\index{\_trans\_commit@{\_trans\_commit}!CI\_DB\_sqlite\_driver@{CI\_DB\_sqlite\_driver}}
+\subsubsection{\texorpdfstring{\_trans\_commit()}{\_trans\_commit()}}
+{\footnotesize\ttfamily \+\_\+trans\+\_\+commit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Commit Transaction
+
+\begin{DoxyReturn}{Retourneert}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__sqlite__driver_ad49a116b0776c26b53114c9093fd102a}\label{class_c_i___d_b__sqlite__driver_ad49a116b0776c26b53114c9093fd102a}} 
+\index{CI\_DB\_sqlite\_driver@{CI\_DB\_sqlite\_driver}!\_trans\_rollback@{\_trans\_rollback}}
+\index{\_trans\_rollback@{\_trans\_rollback}!CI\_DB\_sqlite\_driver@{CI\_DB\_sqlite\_driver}}
+\subsubsection{\texorpdfstring{\_trans\_rollback()}{\_trans\_rollback()}}
+{\footnotesize\ttfamily \+\_\+trans\+\_\+rollback (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Rollback Transaction
+
+\begin{DoxyReturn}{Retourneert}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__sqlite__driver_aa029600528fc1ce660a23ff4b4667f95}\label{class_c_i___d_b__sqlite__driver_aa029600528fc1ce660a23ff4b4667f95}} 
+\index{CI\_DB\_sqlite\_driver@{CI\_DB\_sqlite\_driver}!\_truncate@{\_truncate}}
+\index{\_truncate@{\_truncate}!CI\_DB\_sqlite\_driver@{CI\_DB\_sqlite\_driver}}
+\subsubsection{\texorpdfstring{\_truncate()}{\_truncate()}}
+{\footnotesize\ttfamily \+\_\+truncate (\begin{DoxyParamCaption}\item[{}]{\$table }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Truncate statement
+
+Generates a platform-\/specific truncate string from the supplied data
+
+If the database does not support the T\+R\+U\+N\+C\+A\+TE statement, then this function maps to \textquotesingle{}D\+E\+L\+E\+TE F\+R\+OM table\textquotesingle{}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retourneert}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__sqlite__driver_a77248aaad33eb132c04cc4aa3f4bc8cb}\label{class_c_i___d_b__sqlite__driver_a77248aaad33eb132c04cc4aa3f4bc8cb}} 
+\index{CI\_DB\_sqlite\_driver@{CI\_DB\_sqlite\_driver}!affected\_rows@{affected\_rows}}
+\index{affected\_rows@{affected\_rows}!CI\_DB\_sqlite\_driver@{CI\_DB\_sqlite\_driver}}
+\subsubsection{\texorpdfstring{affected\_rows()}{affected\_rows()}}
+{\footnotesize\ttfamily affected\+\_\+rows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Affected Rows
+
+\begin{DoxyReturn}{Retourneert}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__sqlite__driver_a52bf595e79e96cc0a7c907a9b45aeb4d}\label{class_c_i___d_b__sqlite__driver_a52bf595e79e96cc0a7c907a9b45aeb4d}} 
+\index{CI\_DB\_sqlite\_driver@{CI\_DB\_sqlite\_driver}!db\_connect@{db\_connect}}
+\index{db\_connect@{db\_connect}!CI\_DB\_sqlite\_driver@{CI\_DB\_sqlite\_driver}}
+\subsubsection{\texorpdfstring{db\_connect()}{db\_connect()}}
+{\footnotesize\ttfamily db\+\_\+connect (\begin{DoxyParamCaption}\item[{}]{\$persistent = {\ttfamily FALSE} }\end{DoxyParamCaption})}
+
+Non-\/persistent database connection
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$persistent} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retourneert}
+resource 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__sqlite__driver_a43b8d30b879d4f09ceb059b02af2bc02}\label{class_c_i___d_b__sqlite__driver_a43b8d30b879d4f09ceb059b02af2bc02}} 
+\index{CI\_DB\_sqlite\_driver@{CI\_DB\_sqlite\_driver}!error@{error}}
+\index{error@{error}!CI\_DB\_sqlite\_driver@{CI\_DB\_sqlite\_driver}}
+\subsubsection{\texorpdfstring{error()}{error()}}
+{\footnotesize\ttfamily error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Error
+
+Returns an array containing code and message of the last database error that has occured.
+
+\begin{DoxyReturn}{Retourneert}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__sqlite__driver_a90355121e1ed009e0efdbd544ab56efa}\label{class_c_i___d_b__sqlite__driver_a90355121e1ed009e0efdbd544ab56efa}} 
+\index{CI\_DB\_sqlite\_driver@{CI\_DB\_sqlite\_driver}!field\_data@{field\_data}}
+\index{field\_data@{field\_data}!CI\_DB\_sqlite\_driver@{CI\_DB\_sqlite\_driver}}
+\subsubsection{\texorpdfstring{field\_data()}{field\_data()}}
+{\footnotesize\ttfamily field\+\_\+data (\begin{DoxyParamCaption}\item[{}]{\$table }\end{DoxyParamCaption})}
+
+Returns an object with field data
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retourneert}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__sqlite__driver_a933f2cde8dc7f87875e257d0a4902e99}\label{class_c_i___d_b__sqlite__driver_a933f2cde8dc7f87875e257d0a4902e99}} 
+\index{CI\_DB\_sqlite\_driver@{CI\_DB\_sqlite\_driver}!insert\_id@{insert\_id}}
+\index{insert\_id@{insert\_id}!CI\_DB\_sqlite\_driver@{CI\_DB\_sqlite\_driver}}
+\subsubsection{\texorpdfstring{insert\_id()}{insert\_id()}}
+{\footnotesize\ttfamily insert\+\_\+id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Insert ID
+
+\begin{DoxyReturn}{Retourneert}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_i___d_b__sqlite__driver_a6080dae0886626b9a4cedb29240708b1}\label{class_c_i___d_b__sqlite__driver_a6080dae0886626b9a4cedb29240708b1}} 
+\index{CI\_DB\_sqlite\_driver@{CI\_DB\_sqlite\_driver}!version@{version}}
+\index{version@{version}!CI\_DB\_sqlite\_driver@{CI\_DB\_sqlite\_driver}}
+\subsubsection{\texorpdfstring{version()}{version()}}
+{\footnotesize\ttfamily version (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Database version number
+
+\begin{DoxyReturn}{Retourneert}
+string 
+\end{DoxyReturn}
+
+
+De documentatie voor deze klasse is gegenereerd op grond van het volgende bestand\+:\begin{DoxyCompactItemize}
+\item 
+system/database/drivers/sqlite/sqlite\+\_\+driver.\+php\end{DoxyCompactItemize}
